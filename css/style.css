@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    scroll-behavior: inherit;
+    border: none;
+}
+
+header{
+    display: flex;
+    /* flex-direction: row; */
+    /* ustify-content: flex-end; */
+    justify-content: space-between;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+.logo{
+    display: flex;
+    padding: 2px 2px 0px 2px;
+    /* background-color: violet; */
+    border-radius: 20px;
+}
+.logo h5{ 
+    /* background-color: pink; */
+    font-family: Copperplate Gothic Light; 
+    font-family: Bahnschrift SemiBold;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 40px 0px 0px 0px;
+    border-radius: 20px;
+} 
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius:55px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.menu {
+    padding: 30px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+ }
+.menu li{
+    list-style: none;
+    font-size: 15px;
+    padding: 0px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 5px 5px 5px;
+    font-family: Bahnschrift SemiBold;
+    font-weight: 800;
+    font-size: large;
+    font-size: 30px;
+}
+.menu a:hover{
+    color:  /* #fef6e4 */  pink;
+    /* border-bottom: 4px solid red; */
+}
+/* .box1{
+    animation-name: cambiarcolor;
+    animation-duration: 50s;
+} */
+
+/* @keyframes cambiarcolor {
+    12%{
+        background-color: pink;
+    }
+    12%{
+        background-color: red;
+    }
+    12%{
+        background-color: orange;
+    }
+    12%{
+        background-color: yellow;
+    }
+    12%{
+        background-color: green;
+    }
+    12%{
+        background-color: cadetblue;
+    }
+    12%{
+        background-color: blue;
+    }
+    12%{
+        background-color: violet;
+    }
+} */
+
+.box1 h1{
+    font-family: Bahnschrift SemiBold;
+    background-color: violet;
+    /* background: linear-gradient(red, yellow, blue,green); */
+    text-align: center;
+    letter-spacing: 2px;
+    /* font-size: 1.6rem;
+    color: var(--text);
+    animation: olivetti 5s steps(30), pampalluga 0.5s step-end; */
+    padding: 50px 0px 50px 0px;
+    margin: 50px 50px 50px 50px;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(54, 54, 55);
+    /* animation-name: cambiarcolor;
+    animation-duration: 1s; */
+}
+
+/* @keyframes cambiarcolor {
+        from{
+            background-color: pink;
+        }   
+        to{
+            background-color: pink red orange yellow green cornflowerblue blue ;
+        } 
+}    */ 
+
+#grid{
+    display: grid;
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item6"
+        "item7 item8 item8" ;
+     grid-template-columns: 1fr 2fr 1fr;
+     grid-template-rows: 250px 250px 250px 250px;
+     grid-gap: 5px;
+}
+
+.border{
+    border: 1px solid black; 
+    /* animation-name: cambiarcolor;
+    animation-duration: 10s;*/
+} 
+
+/* @keyframes cambiarcolor {
+    12%{
+        background-color: pink;
+    }
+    12%{
+        background-color: red;
+    }
+    12%{
+        background-color: orange;
+    }
+    12%{
+        background-color: yellow;
+    }
+    12%{
+        background-color: green;
+    }
+    12%{
+        background-color: cadetblue;
+    }
+    12%{
+        background-color: blue;
+    }
+    12%{
+        background-color: violet;
+    }
+} */
+
+.item1{
+    grid-area: item1;
+    background-color: #333;
+    background-image: url(../medios/fotocl5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    grid-area: item2;
+    background-color: #337;
+    background-image: url(../medios/fotocl1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    grid-area: item3;
+    background-color: #333;
+    background-image: url(../medios/fotocl10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    grid-area: item4;
+    background-color: #303;
+    background-image: url(../medios/fotocl9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    grid-area: item5;
+    background-color: #033;
+    background-image: url(../medios/fotocl4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    grid-area: item6;
+    background-color: #339;
+    background-image: url(../medios/fotocl7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    grid-area: item7;
+    background-color: #383;
+    background-image: url(../medios/fotocl5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8{
+    grid-area: item8;
+    background-color: #335;
+    background-image: url(../medios/fotocl8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    text-align: center;
+    font-family:  Bahnschrift SemiBold ;
+    background-color: violet;
+    margin: 30px 30px 20px 20px;
+    padding: 15px 0px 15px 0px;
+    /* border: none; */
+    padding: 50px 0px 50px 0px;
+    margin: 50px 50px 50px 50px;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(54, 54, 55);
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 500%; */
+}
+
+.box2 section{
+   
+   background-color: #333;
+   padding: 10px 50px 5px 50px;
+   margin: 20px 20px 20px 50px;
+   border-radius: 15px;
+   /* max-width: 200px;
+   min-width: 200px; */
+   /* box-shadow: 10px 10px 10px rgb(54, 54, 55); */
+}
+
+.box2 section h3{
+    color: white;
+    text-align: center;
+    /* background-color: #97274d; */
+    /* border-radius: 10px; */
+    font-size: 25px;
+}
+.box2 section h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 0px 0px 0px;
+    font-size: 20px;
+    color: white;
+}
+.metodologia {
+    background-color: #333;
+    padding: 10px 50px 5px 50px;
+    margin: 20px 20px 20px 50px;
+    border-radius: 15px;
+}
+.metodologia h5{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.metodologia p {
+    color:white;
+    font-size: 20px;
+}
+
+/* .boton{
+    background-color: #333;
+    border-radius: 15px;
+    padding: 2px 2px 2px 2px;
+} */
+
+.boton button{
+/*     display: flex;
+    justify-content:space-between; */
+    background-color: blue;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    margin: 0px 50px 500px 35%;
+}
+
+.boton a{
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: blue;
+    font-size: 30px;
+}
+.boton a:hover{
+    color: #333;
+}
+
+
+.social{
+   display: flex;
+   justify-content: center;
+   background-color: #333;
+   padding: 100px 0px 100px 0px;
+}
+.social a:hover{
+    color: #333;
+}
+.social i{
+    color: white;
+    padding: 0px 50px 50px 0px;
+    font-size: 50px;
+}
+.social i:hover{
+    color: black;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width:856px){
+    .box2{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* margin-bottom: 500%; */
+    }
+}
